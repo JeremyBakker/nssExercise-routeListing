@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RouteApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Route Listing</title>
+</head>
+<body>
+	<h1>Route Listing</h1>
+	<div>
+		<a href="#!/Hwy66"><img src="images/route66.jpeg" alt="Image of Route 66" height="200px" width="200px"></a>
+		<a href= "#!/PacificCoast"><img src="images/pch.jpeg" alt="Image of the Pacific Coast Highway" height="200px" width="200px"></a>
+	</div>
+		
+	</div>
+	<div ng-view>
+	<!-- Insert Partials Here -->	
+	</div>
+	<a href="#!/">Home<a>
+	<script type="text/javascript" src="./lib/node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers/Hwy66Ctrl.js"></script>
+	<script type="text/javascript" src="app/controllers/PacificCoastCtrl.js"></script>
+</body>
+</html>
